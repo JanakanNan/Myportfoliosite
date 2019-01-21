@@ -60,7 +60,53 @@ class Projects extends Component {
              )
         }else if (this.state.activeTab === 1){
             return(
-                <div><h1>This is Angular</h1></div>
+                <div className="projects-grid">
+                    {/* Project 1 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background:'url(https://tehnoblog.org/wp-content/uploads/2014/08/android.png) center / cover'}}>React Project #1</CardTitle>
+                        <CardText>
+                            Lorem Ipsum is simply dummy text of the priting and typesetting industry. Lorem Ipsum has the industry's
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* Project 2 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background:'url(https://tehnoblog.org/wp-content/uploads/2014/08/android.png) center / cover'}}>React Project #2</CardTitle>
+                        <CardText>
+                            Lorem Ipsum is simply dummy text of the priting and typesetting industry. Lorem Ipsum has the industry's
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* Project 3 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background:'url(https://tehnoblog.org/wp-content/uploads/2014/08/android.png) center / cover'}}>React Project #3</CardTitle>
+                        <CardText>
+                            Lorem Ipsum is simply dummy text of the priting and typesetting industry. Lorem Ipsum has the industry's
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }else if (this.state.activeTab === 2){
             return(
@@ -77,9 +123,9 @@ class Projects extends Component {
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                     <Tab>React</Tab>
-                    <Tab>Angular</Tab>
-                    <Tab>VueJS</Tab>
-                    <Tab>MongoDB</Tab>
+                    <Tab>Android</Tab>
+                    <Tab>Java</Tab>
+                    <Tab>Swift</Tab>
                 </Tabs>
 
                 <Grid>
